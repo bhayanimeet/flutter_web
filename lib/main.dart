@@ -43,10 +43,10 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         flexibleSpace: Container(
-          margin: const EdgeInsets.only(top: 60),
+          margin: const EdgeInsets.only(top: 45),
           child: Row(
             children: [
-              const SizedBox(width: 15),
+              const SizedBox(width: 10),
               GestureDetector(
                 onTap: () async {
                   await inAppWebViewController.loadUrl(
@@ -57,9 +57,9 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: const Icon(Icons.home,size: 30),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 10),
               Container(
-                height:35,
+                height: 40,
                 width: 180,
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.only(left: 10),
@@ -69,28 +69,28 @@ class _HomePageState extends State<HomePage> {
                 ),
                 child: const Text("https://docs.flutter.dev/"),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 10),
               GestureDetector(
                 onTap: () async {
                   await inAppWebViewController.goBack();
                 },
                 child: const Icon(Icons.arrow_back,size: 30),
               ),
-              const SizedBox(width: 15),
+              const SizedBox(width: 10),
               GestureDetector(
                 onTap: () async {
                   await inAppWebViewController.goForward();
                 },
                 child: const Icon(Icons.arrow_forward,size: 30),
               ),
-              const SizedBox(width: 15),
+              const SizedBox(width: 10),
               GestureDetector(
                 onTap: () async {
                   await inAppWebViewController.reload();
                 },
                 child: const Icon(Icons.refresh,size: 30),
               ),
-              const SizedBox(width: 15),
+              const SizedBox(width: 10),
             ],
           ),
         ),
